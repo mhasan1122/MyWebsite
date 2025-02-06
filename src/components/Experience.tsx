@@ -10,7 +10,7 @@ export default function Experience() {
 
   const experiences = [
     {
-      title: "Full Stack Developer Intern",
+      title: "Full Stack Developer",
       company: "ScaleUp Ads Agency",
       period: "2024",
       description: "Developed and maintained web applications using React and Node.js. Collaborated with senior developers on various projects."
