@@ -10,6 +10,13 @@ export default function Experience() {
 
   const experiences = [
     {
+      title: "Junior Software Engineer",
+      company: "DevTechGuru",
+      companyLink: "https://devtechguru.com/",
+      period: "May 2025 - Present",
+      description: "Working with React Native, React, and Django to develop and maintain mobile and web applications."
+    },
+    {
       title: "Full Stack Developer",
       company: "ScaleUp Ads Agency",
       period: "2024",
@@ -52,7 +59,18 @@ export default function Experience() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">{exp.title}</h3>
-                  <p className="text-gray-600">{exp.company}</p>
+                  {exp.companyLink ? (
+                    <a 
+                      href={exp.companyLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-blue-600 hover:underline transition-colors"
+                    >
+                      {exp.company}
+                    </a>
+                  ) : (
+                    <p className="text-gray-600">{exp.company}</p>
+                  )}
                   <p className="text-gray-500 text-sm mb-2">{exp.period}</p>
                   <p className="text-gray-700">{exp.description}</p>
                 </div>
